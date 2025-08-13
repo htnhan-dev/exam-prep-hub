@@ -31,34 +31,41 @@ It provides an interactive experience with:
 ---
 
 ## 📂 Folder Structure
+```text
 exam-prep-hub/
 │
-├── api/ # Backend (Express + TS + MongoDB)
-├── client/ # Frontend (React + Vite + Tailwind)
-├── package.json # Workspace root config
-├── pnpm-workspace.yaml
+├── api/                 # Backend (Express + TS + MongoDB)
+├── client/              # Frontend (React + Vite + Tailwind)
+├── package.json         # Workspace root config & scripts
+├── pnpm-workspace.yaml  # pnpm workspace definition
 ├── .gitignore
 └── README.md
+```
 
+🛠 Development Setup
 
-## 🛠 Development Setup
+### 1. Clone the repo
 
-1. **Clone the repo**
 ```bash
 git clone https://github.com/htnhan-dev/exam-prep-hub.git
 cd exam-prep-hub
+```
 
-2. **Install dependencies**
+### 2. Install dependencies
+
 ```bash
 pnpm install
+```
 
+### 3. Run API & Client together
 
-3. **Run API & Client together**
 ```bash
 pnpm dev
+```
 
+### 4. Run individually
 
-4. **Run individually**
 ```bash
 pnpm --filter api dev
 pnpm --filter client dev
+```
